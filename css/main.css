@@ -9,33 +9,29 @@ body {
 
 h1 {
   position: relative;
-  padding: 0.25em 1em;
-  border-top: solid 2px black;
-  border-bottom: solid 2px black;
 }
-h1:before, h1:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: black;
-}
-h1:before {
-  left: 7px;
-}
+
 h1:after {
-  right: 7px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
 }
 
 h2 {
-    margin-top: 40px;
-    padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
-    color: #494949; /*文字色*/
-    background: #f4f4f4; /*背景色*/
-    border-left: solid 5px #7db4e6; /*左線*/
-    border-bottom: solid 3px #d7d7d7; /*下線*/
+  position: relative;
+  padding: 0.25em 0;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(40, 200, 105), transparent);
+  background: linear-gradient(to right, rgb(40, 200, 105), transparent);
 }
 
 section > p {
