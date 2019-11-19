@@ -30,8 +30,8 @@ h2:after {
   content: "";
   display: block;
   height: 4px;
-  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
-  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: -webkit-linear-gradient(to right, rgb(40, 200, 105), transparent);
+  background: linear-gradient(to right, rgb(40, 200, 105), transparent);
 }
 
 section > p {
